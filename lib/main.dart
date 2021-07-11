@@ -1,5 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
-import 'package:firebaseplugin/view/homePage.dart';
+import 'package:firebaseplugin/view/firestore.dart';
 import 'package:firebaseplugin/view/login.dart';
 import 'package:flutter/material.dart';
 
@@ -47,7 +47,7 @@ class _AppState extends State<App> {
 
         // Once complete, show your application
         if (snapshot.connectionState == ConnectionState.done) {
-          return Login();
+          return FireStoreOperations();
         }
 
         // Otherwise, show something whilst waiting for initialization to complete
